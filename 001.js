@@ -26,7 +26,7 @@ function solution(price, money, count) {
    
     return answer;
 }
-//기댓값은 양수, 이 코드대로라면 answer은 음수 혹은 0을 리턴해서 안됨 ㅠㅠ
+//기댓값은 양수, 소지금 - 필요 금액 = 음수(모자르지 않으면 0) 필요 금액 - 소지금 = 양수
 */
 
 //도움받은 코드 https://programmers.co.kr/questions/24719
@@ -37,7 +37,7 @@ public long solution(int price, long money, int count) {
         for(int i=1; i<=count; i++){
             pay += price*i;
         }
-        answer = (pay-money>0)?pay-money:0;       
+        answer = (pay-money>0) ? pay-money : 0;       
         return answer;
     }
 */
